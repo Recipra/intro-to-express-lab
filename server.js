@@ -14,7 +14,9 @@ app.get('/home', function(req, res) {
   res.render('home')
 })
 
-app.get('/students')
+app.get('/students', function(req, res) {
+  res.render('students/index', {students})
+})
 
 
 
